@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 22px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Biography Section */
+.biography {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.biography h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+.bio-content {
+    display: grid;
+    gap: 20px;
+}
+
+.bio-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #555;
+    text-align: justify;
+}
+
+/* Quote Section */
+.quote-section {
+    background: linear-gradient(135deg, #e8d4f1 0%, #d4c5f9 100%);
+    padding: 60px 0;
+}
+
+.quote {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    color: #2c3e50;
+    line-height: 1.8;
+}
+
+.quote p {
+    margin-bottom: 20px;
+}
+
+.quote footer {
+    font-size: 18px;
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Achievements/Timeline */
+.achievements {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.achievements h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+.timeline {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline li {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.year {
+    font-weight: 700;
+    font-size: 18px;
+    color: #667eea;
+    font-family: 'Arial', sans-serif;
+}
+
+.event {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Impact Section */
+.impact {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.impact h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+.impact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
+
+    .biography h2,
+    .achievements h2,
+    .impact h2 {
+        font-size: 28px;
+    }
+
+    .bio-content p {
+        font-size: 16px;
+    }
+
+    .impact-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline li {
+        grid-template-columns: 80px 1fr;
+        gap: 20px;
+    }
+
+    .quote {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .hero-image {
+        max-width: 250px;
+    }
+
+    .timeline li {
+        grid-template-columns: 1fr;
+    }
+
+    .year {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
